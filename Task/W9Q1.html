@@ -6,52 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div.blue1 {width:100px;height:200px;background-color:blue;
-                    border-style:none;
+        div.blue1 {width:100px;height:200px;background-color:skyblue;
+                    border-style:none; border: solid 3px;
                     position:relative;left:0%;top:0px;}
         div.yellow1 {width:100px;height:150px;background-color:yellow;
-                    border-style:none;
+                    border-style:none; text-align: center;
+                    
                     position:relative;left:100px;top:-200px;}
         div.red1 {width:100px;height:150px;background-color:red;
-                    border-style:none;
+                    border-style:none; text-align: center;
                     position:relative;left:200px;top:-350px;}
         div.green1 {width:200px;height:150px;background-color:green;
                     border-style:none;
-                    position:relative;left:100px;top:-350px;}
+                    position:relative;left:100px;top:-450px;}
+        .table{
+            border: 3px solid black;
+            width: 300px;
+            height: 219px;
+        }
+        
         </style>
         
 </head>
 <body>
-    <!-- <div style="position: relative;">
-        <div style="position: absolute; top: 0; left: 0; width: 100px; height: 200px; background-color: blue;">
-            <p>
-                A numbered list: <br>
-                <ol>
-                    <li>Able</li>
-                    <li>Baker</li>
-                    <li>Charlie</li>
-                    <li>Delta</li>
-                    <li>Echo</li>
-                </ol>
-            </p>
+    <div class="table">
+        <div class="header">
+        <div class="column1">
+            Column1  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            Column2   &nbsp; &nbsp; &nbsp; &nbsp; 
+            Column3
         </div>
-        <div style="position: absolute; top: 0; left: 100px; width: 100px; height: 150px; background-color: yellow;">
-        B</div>
         
-        <div style="position: absolute; top: -150px; left: 200px; width: 100px; height: 150px; background-color: red;">
-        C </div>
-        <div style="position: absolute; top: -150px; left: 100px; width: 200px; height: 50px; background-color: green;">
-        An unnumbered list:
-        <ul>
-            <li>Pounds</li>
-            <li>Dollars</li>
-            <li>Euro</li>
-            <li>Yen</li>
-            <li>Roubles</li>
-        </ul>
-       </div>
-      </div>
-       -->
  <div class = "blue1">
     A numbered list: <br>
                 <ol>
@@ -74,6 +59,7 @@
             <li>Roubles</li>
         </ul>
 </div>
+    </div>
 
 </body>
 </html>
