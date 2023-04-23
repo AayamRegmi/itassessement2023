@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/Tickets.css" type="text/css">
+    <script src="JS/index.js"></script>
+</head>
+<body style="background-image: url(Images/Iceland.jpg); background-size: cover; background-repeat: repeat-y repeat;">
+
+    
+    <nav>
+      <a href="index.html">
+      <img class="logo" src="Images/Logo.png" href="index.html" ></a>
+        <ul>
+          <li><a href="Tickets.html">Tickets</a></li>
+          <li class="gallery"><a href="Gallery.html">Our Gallery</a></li>
+          <li class="about"><a href="About.html">About</a></li>
+          <li class="gap">|</li>
+          <li class="contact"><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+            
+      <form method="get" class="TIC" onsubmit="return validateForm();">
+        <table>
+          <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="first_name" required></td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td><input type="text" name="last_name" required></td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" required></td>
+          </tr>
+          <tr>
+            <td>Destination:</td>
+            <td>
+              <select name="destination" required style="color: white; background-color: black;" >
+                <option value="">Select a destination</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iceland">Iceland</option>
+                <option value="Singapore">Singapore</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Phone Number:</td>
+            <td><input type="tel" name="phone_number" required></td>
+          </tr>
+          <tr>
+            <td>Booking Date and Time:</td>
+            <td><input type="datetime-local" name="booking_datetime" required></td>
+          </tr>
+          <tr>
+            <td>Ticket type:</td>
+            <td>
+              <label>
+                <input type="radio" name="class[]" value="Tickets" required> Economic
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="class[]" value="Tickets" required> Business
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="class[]" value="Tickets" required> First class
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Number of Tickets:</td>
+            <td><input type="number" name="num_tickets" required></td>
+          </tr>
+          <tr>
+            <td>Additional Comments:</td>
+            <td><textarea name="comments"></textarea></td>
+          </tr>
+        </table>
+        <input type="submit" value="Submit" class="submitbutton">
+      </form>
+   <footer>
+    <div class="footer-content">
+      <p class="footer-text">Quick links:<br>
+         <a href="index.html">Home</a><br>
+         <a href="Tickets.html">Tickets</a><br>
+         <a href="About.html">About</a><br>
+         <a href="Contact.html">Contact</a><br>
+         <a href="Gallery.html">Our gallery</a>
+         </p>
+         <div class="socialmedia"></div>
+         <img src="Images/Logo.png" class="footer-logo">
+    </div>
+
+   </footer>
+</body>
+</html>
