@@ -1,65 +1,191 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        div.blue1 {width:100px;height:200px;background-color:skyblue;
-                    border-style:none; border: solid 3px;
-                    position:relative;left:0%;top:0px;}
-        div.yellow1 {width:100px;height:150px;background-color:yellow;
-                    border-style:none; text-align: center;
-                    
-                    position:relative;left:100px;top:-200px;}
-        div.red1 {width:100px;height:150px;background-color:red;
-                    border-style:none; text-align: center;
-                    position:relative;left:200px;top:-350px;}
-        div.green1 {width:200px;height:150px;background-color:green;
-                    border-style:none;
-                    position:relative;left:100px;top:-450px;}
-        .table{
-            border: 3px solid black;
-            width: 300px;
-            height: 219px;
-        }
-        
-        </style>
-        
-</head>
-<body>
-    <div class="table">
-        <div class="header">
-        <div class="column1">
-            Column1  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            Column2   &nbsp; &nbsp; &nbsp; &nbsp; 
-            Column3
-        </div>
-        
- <div class = "blue1">
-    A numbered list: <br>
-                <ol>
-                    <li>Able</li>
-                    <li>Baker</li>
-                    <li>Charlie</li>
-                    <li>Delta</li>
-                    <li>Echo</li>
-                </ol>
- </div>
-<div class = "yellow1">B</div>
-<div class = "red1">C</div>
-<div class = "green1">
-     An unnumbered list:
-        <ul>
-            <li>Pounds</li>
-            <li>Dollars</li>
-            <li>Euro</li>
-            <li>Yen</li>
-            <li>Roubles</li>
-        </ul>
-</div>
-    </div>
+<html>
 
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid rgb(0, 0, 0);
+            padding: 5px;
+            margin:60px 80px ;
+            height: 41.5vh;
+            width: 522px;
+            background-color: beige;
+            outline: 2px yellow solid;
+            
+
+
+        }
+
+        div.white1 {
+            border: 1px solid;
+            background-color: rgb(224, 223, 221);
+            width: 200px;
+            height: 60px;
+            text-align: center;
+
+
+        }
+
+        div.blue1 {
+            border: 1px solid;
+            background-color: rgb(104, 234, 243);
+            width: 200px;
+            height: 213px;
+            position: relative;
+            top: 4px;
+
+
+        }
+
+        div.white2 {
+            border: 1px solid;
+            background-color: rgb(224, 223, 221);
+            width: 150px;
+            height: 60px;
+            position: absolute;
+            top: 67;
+            left: 291px;
+            text-align: center;
+
+        }
+
+        div.yellow1 {
+            border: 1px solid;
+            background-color: rgb(255, 238, 4);
+            width: 150px;
+            height: 60px;
+            position: absolute;
+            top: 132px;
+            left: 291px;
+            text-align: end;
+
+        }
+
+        div.white3 {
+            border: 1px solid;
+            background-color: rgb(224, 223, 221);
+            width: 150px;
+            height: 60px;
+            position: absolute;
+            top: 67;
+            left: 445px;
+            text-align: center;
+
+        }
+
+        div.red1 {
+            border: 1px solid;
+            background-color: rgb(251, 7, 7);
+            width: 150px;
+            height: 60px;
+            position: absolute;
+            top: 132;
+            left: 445px;
+            text-align: center;
+
+        }
+
+        div.green1 {
+            border: 1px solid;
+            background-color: rgb(78, 153, 13);
+            width: 304px;
+            height: 150px;
+            position: absolute;
+            top: 195px;
+            left: 291px
+        }
+
+        ol li {
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+
+        p#blue {
+            position: relative;
+            top: 18px;
+            left: 10px;
+        }
+
+        .Column1 {
+            position: relative;
+            top: 18px;
+            font-weight: bold;
+        }
+
+        #Column2 {
+            position: relative;
+            top: 18px;
+            font-weight: bold;
+        }
+
+        #Column3 {
+            position: relative;
+            top: 18px;
+            font-weight: bold;
+        }
+
+        #C {
+            position: relative;
+            top: 18px;
+            right: 2px;
+        }
+
+        #green {
+            position: relative;
+            left: 20px;
+        }
+
+        .green1 ul li {
+            position: relative;
+            left: 60px;
+            top: 20;
+
+        }
+
+        #B {
+            position: relative;
+            top: 17px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="white1"><span class="Column1">Column 1</span></div>
+        <div class="blue1">
+            <p id="blue">A number list:</p>
+            <ol>
+                <li>Able</li>
+                <li>Baker</li>
+                <li>Charlie</li>
+                <li>Delta</li>
+                <li>Echo</li>
+            </ol>
+        </div>
+        <div class="white2"><span id="Column2">Column 2</span></div>
+        <div class="yellow1"><span id="B">B</span></div>
+        <div class="white3"><span id="Column3">Column 3</span></div>
+        <div class="red1"><span id="C">C</span></div>
+        <div class="green1">
+            <p id="green">An unnumbered list:</p>
+            <ul type="dot">
+                <li>Pounds</li>
+                <li>Dollars</li>
+                <li>Euro</li>
+                <li>Yen</li>
+                <li>Roubles</li>
+
+            </ul>
+
+        </div>
+    </div>
 </body>
+
 </html>
